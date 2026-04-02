@@ -9,7 +9,7 @@ import { InjectModel } from '@nestjs/mongoose';
 import { isValidObjectId, Model } from 'mongoose';
 import { CreateUserDto } from './dto/create-user.dto';
 import { User, UserDocument } from './entities/user.entity';
-import { Role } from '../common/enums/role.enum';
+import { Role } from '../auth/common/enums/role.enum';
 
 type PublicUser = Omit<User, 'password'>;
 

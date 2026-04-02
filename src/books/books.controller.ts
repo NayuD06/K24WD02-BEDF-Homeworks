@@ -11,11 +11,11 @@ import {
 import { BooksService } from './books.service';
 import { CreateBookDto } from './dto/create-book.dto';
 import { UpdateBookDto } from './dto/update-book.dto';
-import { Roles } from '../common/decorators/roles.decorator';
-import { Role } from '../common/enums/role.enum';
-import { CurrentUser } from '../common/decorators/current-user.decorator';
-import type { JwtPayload } from '../common/types/jwt-payload.type';
-import { Public } from '../common/decorators/public.decorator';
+import { Roles } from '../auth/common/decorators/roles.decorator';
+import { Role } from '../auth/common/enums/role.enum';
+import { CurrentUser } from '../auth/common/decorators/current-user.decorator';
+import type { JwtPayload } from '../auth/jwt/jwt-payload.type';
+import { Public } from '../auth/common/decorators/public.decorator';
 
 @Controller('books')
 export class BooksController {

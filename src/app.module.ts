@@ -6,8 +6,8 @@ import { AppService } from './app.service';
 import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
 import { BooksModule } from './books/books.module';
-import { JwtGlobalAuthGuard } from './auth/guards/jwt-global-auth.guard';
-import { RolesGuard } from './common/guards/roles.guard';
+import { JwtGlobalAuthGuard } from './auth/jwt/jwt-global-auth.guard';
+import { RolesGuard } from './auth/common/guards/roles.guard';
 
 @Module({
   imports: [

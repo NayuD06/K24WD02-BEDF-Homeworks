@@ -7,9 +7,9 @@ import {
 } from '@nestjs/common';
 import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
-import { Roles } from '../common/decorators/roles.decorator';
-import { Role } from '../common/enums/role.enum';
-import { Public } from '../common/decorators/public.decorator';
+import { Roles } from '../auth/common/decorators/roles.decorator';
+import { Role } from '../auth/common/enums/role.enum';
+import { Public } from '../auth/common/decorators/public.decorator';
 
 @Controller('users')
 export class UsersController {
